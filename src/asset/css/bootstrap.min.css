@@ -7374,6 +7374,10 @@ fieldset:disabled .btn {
     }
 }
 @media (min-width: 768px) {
+    .md-position-absolute {
+        position: absolute !important;
+    }
+
     .float-md-start {
         float: left !important;
     }

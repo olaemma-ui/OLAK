@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import hero from "../asset/img/slider/hero-man-2.png";
 
 function Home(){
@@ -21,7 +22,7 @@ function Home(){
                                 A three-month curriculum is also available from us to put the next generation on the tech race...
                             </h4>
 
-                            <a href="https://" className="btn read-more">Read More</a>
+                            <Link to="/about" className="btn read-more">Read More</Link>
                         </div>
                         <div className="col-md-4 mb-5">
                             <img src={hero} alt="vision" className="home-hero-img"/>

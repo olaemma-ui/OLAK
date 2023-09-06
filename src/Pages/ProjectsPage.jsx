@@ -18,7 +18,7 @@ export const ProjectsPage =() => {
                    
                    <div className="mt-5">
                        <Projects 
-                            wrapper='Web Applications' 
+                            wrapper='Web App' 
                             title='Web' 
                             content='Web Application'
                             projects={projects}/>
@@ -26,7 +26,7 @@ export const ProjectsPage =() => {
 
                    <div className="mt-5">
                         <Projects 
-                            wrapper='Mobile Applications' 
+                            wrapper='Mobile App' 
                             title='Mobile' 
                             content='Mobile Application'
                             projects={projects}/>
@@ -34,7 +34,7 @@ export const ProjectsPage =() => {
 
                    <div className="mt-5">
                         <Projects 
-                            wrapper='Destop Applications' 
+                            wrapper='Destop App' 
                             title='Desktop' 
                             content='Destop Application'
                             projects={projects}/>

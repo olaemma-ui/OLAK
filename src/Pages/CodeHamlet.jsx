@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import { Jumbotron, Skill,  Wrapper } from "../Components/Components";
 import { skills } from "../Data/ComponentData";
 
-import img from "../asset/img/blog/blog-9.jpg";
+import img from "../asset/img/olak-005.jpg";
 
 export const CodeHamLet =() => {
     return (
-        <section className="pt-5">
+        <section className="pt-5" style={{overflowX: 'hidden'}}>
             <Jumbotron 
                 page='Code Hamlet' 
                 id='codeHamlet'

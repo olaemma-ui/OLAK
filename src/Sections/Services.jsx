@@ -1,5 +1,6 @@
 
-    import { Wrapper, Service } from "../Components/Components";
+    import ScrollAnimation from "react-animate-on-scroll";
+import { Wrapper, Service } from "../Components/Components";
 import { services } from "../Data/ComponentData";
 
 
@@ -17,7 +18,11 @@ function Services() {
                 <div className="row justify-content-space-between">
                 {services.map((service)=> 
                     <div className="col-md-4 col-lg-4 col-12 mt-4">
+                    <ScrollAnimation
+                        animateIn='bounceInLeft'
+                        animateOut='bounceOutRight'>
                         <Service {...service} />
+                    </ScrollAnimation>
                     </div>
                 )}
                 </div>

@@ -1,3 +1,4 @@
+import ScrollAnimation from "react-animate-on-scroll";
 import { AppTextArea, AppTextField, Jumbotron } from "../Components/Components";
 import { contacts } from "../Data/ComponentData";
 
@@ -16,6 +17,9 @@ export const Contact =() => {
                 <div className="container pt-5 pb-5">
                     <div className="row">
                         <div className="col-lg-6 mb-5">
+                        <ScrollAnimation
+                            animateIn='bounceInLeft'
+                            animateOut='bounceOutLeft'>
                             <span>Get In Touch</span>
                             <h2 className="heading-2">
                                 Send Us a Message!
@@ -54,9 +58,13 @@ export const Contact =() => {
                                     Send Message
                                 </button>
                             </form>
+                        </ScrollAnimation>
                         </div>
                         {/* <div className="col-lg-1"></div> */}
                         <div className="col-lg-6 col-lg-5">
+                        <ScrollAnimation
+                            animateIn='bounceInRight'
+                            animateOut='bounceOutRight'>
                             <span>Contact Us</span>
                             <h2 className="heading-2">
                                 Reach us for help
@@ -80,6 +88,7 @@ export const Contact =() => {
                                 </div>
                             )}
                             </div>
+                            </ScrollAnimation>
                         </div>
                     </div>
                 </div>

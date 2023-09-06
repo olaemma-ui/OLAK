@@ -5,14 +5,24 @@ import Projects from "../Sections/Projects";
 import Services from "../Sections/Services";
 import { projects } from "../Data/ComponentData";
 import { Link } from "react-router-dom";
+import ScrollAnimation from "react-animate-on-scroll";
 
 
 export function HomePage() {
     return (
         <>
-            <Home />
-            <About />
+            <ScrollAnimation 
+                animateIn='bounceInRight'
+                animateOut='bounceOutLeft'>
+                <Home />
+            </ScrollAnimation>
+                <About />
+
             <Services />
+            <ScrollAnimation
+                animateIn='bounceInRight'
+                animateOut='bounceOutLeft'
+            >
             <Projects
                 title='Projects'
                 content={'Our Projects!'}
@@ -24,6 +34,7 @@ export function HomePage() {
                     See More
                 </Link>
             </Projects>
+            </ScrollAnimation>
         </>
     );
 }

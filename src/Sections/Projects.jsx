@@ -1,35 +1,7 @@
 
+import ScrollAnimation from "react-animate-on-scroll";
 import { Wrapper, Project, } from "../Components/Components";
-import OwlCarousel from 'react-owl-carousel'; 
 
-import 'owl.carousel/dist/assets/owl.carousel.css';  
-import 'owl.carousel/dist/assets/owl.theme.default.css'; 
-const options = {
-    margin: 30,
-    responsiveClass: true,
-    nav: true,
-    autoplay: true,
-    smartSpeed: 1000,
-    rewind: true,
-    navText: [],
-    responsive: {
-        0: {
-            items: 1,
-        },
-        400: {
-            items: 1,
-        },
-        600: {
-            items: 2,
-        },
-        700: {
-            items: 3,
-        },
-        1000: {
-            items: 3,
-        }
-    },
-  };
 function Projects({projects, wrapper, title, content, children}) {
    
     return(
@@ -42,10 +14,16 @@ function Projects({projects, wrapper, title, content, children}) {
                             content={content}
                         >
                         </ Wrapper>
-                        
-                        <OwlCarousel className="owl-carousel" {...options}>
-                            {projects.map((project)=> <Project {...project} />)}
-                        </OwlCarousel>
+                        <ScrollAnimation
+                            animateIn='fadeInRight'
+                            animateOut='fadeOutLeft'>
+                            <div className="row gap-" style={{overflowX: 'auto', overflowY: 'hidden', flexWrap: 'nowrap', zIndex: '1000', position: 'relative'}}>
+                                {projects.map((project)=> <Project {...project} />)}
+                            </div>
+                        </ScrollAnimation>
+                        {/* <OwlCarousel className="owl-carousel" {...options}> */}
+                            {/* {projects.map((project)=> <Project {...project} />)} */}
+                        {/* </OwlCarousel> */}
                         {children}
                 </div>
             </section>

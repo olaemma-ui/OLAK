@@ -5,6 +5,16 @@ import blog4 from "../asset/img/blog/blog-4.jpg";
 import blog5 from "../asset/img/blog/blog-5.jpg";
 import blog6 from "../asset/img/blog/blog-6.jpg";
 
+import larry from '../asset/img/larry.jpg';
+import pastor from '../asset/img/pastor.jpg';
+// import abs from '../asset/img/abs.jpg';
+import samson from '../asset/img/samson.jpg';
+import dabira from '../asset/img/dabira.jpg';
+import blessed from '../asset/img/blessed.jpg';
+import absam from '../asset/img/absam.jpg';
+import olamma from '../asset/img/olaemma.jpg';
+
+
 const services = [
     {
         'title': 'Web Development',
@@ -136,7 +146,7 @@ const contacts = [
     {
         'href':'mail',
         'title':'Email Address',
-        'content':'olaktech@gmail.com',
+        'content':'info@olaktech.com.ng',
         'icon': 'fa-envelope'
     },
     {
@@ -223,13 +233,59 @@ const projects = [
 ]
 
 const team = [
+
     {
-        'name': 'Tejumola Emmanuel O.',
+        'name': 'Oloruntimilehin Kolawole A.',
+        'about': `harbours an ardent zeal for EduTech and innovatively creates using modern technologies. 
+                    Having extensive knowledge in the technology sector, 
+                    I have delivered exceptional software development solutions for clients in the education, ecommerce, and finance industries. 
+                    Additionally, I am enthusiastic about producing tech articles and currently hold the position of 
+                    Vice-Chairman at the Corp Security International Abeokuta chapter (INFOSEC).`,
+        'role': 'System / Software / Technology Analyst / Founder / CEO ',
+        'img': pastor,
+        'reverse': false,
+        'contact': [
+            // {
+            //     'title': 'Phone Number',
+            //     'content': '(+234) 815 2715 095',
+            //     'icon': 'fa-phone-alt'
+            // },
+            // {
+            //     'title': 'Email',
+            //     'content': 'olaemma4213@gmail.com',
+            //     'icon': 'fa-envelope'
+            // }
+        ],
+        'account': [
+            {
+                'icon': 'fab fa-facebook',
+                'link': 'https://facebook.com',
+                'color': 'primary'
+            },
+            {
+                'icon': 'fab fa-twitter',
+                'link': 'https://twitter.com',
+                'color': 'info'
+            },
+            {
+                'icon': 'fab fa-instagram',
+                'link': 'https://intagram.com',
+                'color': 'danger'
+            },
+            {
+                'icon': 'fab fa-linkedin',
+                'link': 'https://linkedin.com',
+                'color': 'primary'
+            },
+        ]
+    },
+    {
+        'name': 'Larry Coded',
         'about': `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Molestiae tempore ducimus tempora rerum autem maiores totam alias officia dolore, 
                 modi eligendi aspernatur, ab impedit optio omnis atque quas vitae explicabo?`,
-        'role': 'Mobile & Web Developer',
-        'img': blog1,
+        'role': 'Chif Operation Officer (COO)',
+        'img': larry,
         'reverse': true,
         'contact': [
             // {
@@ -268,13 +324,13 @@ const team = [
     },
 
     {
-        'name': 'Adebiyi Abdulsamod A.',
+        'name': 'Adebiyi Abdulsamad A.',
         'about': `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Molestiae tempore ducimus tempora rerum autem maiores totam alias officia dolore, 
                 modi eligendi aspernatur, ab impedit optio omnis atque quas vitae explicabo?`,
-        'role': 'Fullstack Web Developer',
+        'role': 'Chief Technology Officer (CTO)',
         'reverse': false,
-        'img': blog1,
+        'img': absam,
         'contact': [
             {
                 'title': 'Phone Number',
@@ -309,7 +365,185 @@ const team = [
                 'color': 'primary'
             },
         ]
-    }
+    },
+
+    
+    {
+        'name': 'Tejumola Emmanuel O.',
+        'about': `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Molestiae tempore ducimus tempora rerum autem maiores totam alias officia dolore, 
+                modi eligendi aspernatur, ab impedit optio omnis atque quas vitae explicabo?`,
+        'role': 'Team lead Software Development',
+        'reverse': true,
+        'img': olamma,
+        'contact': [
+            {
+                'title': 'Phone Number',
+                'content': '(+234) 815 2715 095',
+                'icon': 'fa-phone-alt'
+            },
+            {
+                'title': 'Email',
+                'content': 'olaemma4213@gmail.com',
+                'icon': 'fa-envelope'
+            }
+        ],
+        'account': [
+            {
+                'icon': 'fab fa-facebook',
+                'link': 'https://facebook.com',
+                'color': 'primary'
+            },
+            {
+                'icon': 'fab fa-twitter',
+                'link': 'https://twitter.com',
+                'color': 'info'
+            },
+            {
+                'icon': 'fab fa-instagram',
+                'link': 'https://intagram.com',
+                'color': 'danger'
+            },
+            {
+                'icon': 'fab fa-linkedin',
+                'link': 'https://linkedin.com',
+                'color': 'primary'
+            },
+        ]
+    },
+
+    
+    {
+        'name': 'Shotayo Samson A.',
+        'about': `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Molestiae tempore ducimus tempora rerum autem maiores totam alias officia dolore, 
+                modi eligendi aspernatur, ab impedit optio omnis atque quas vitae explicabo?`,
+        'role': 'Team lead Product and Graphic Design',
+        'reverse': false,
+        'img': samson,
+        'contact': [
+            {
+                'title': 'Phone Number',
+                'content': '(+234) 815 2715 095',
+                'icon': 'fa-phone-alt'
+            },
+            {
+                'title': 'Email',
+                'content': 'olaemma4213@gmail.com',
+                'icon': 'fa-envelope'
+            }
+        ],
+        'account': [
+            {
+                'icon': 'fab fa-facebook',
+                'link': 'https://facebook.com',
+                'color': 'primary'
+            },
+            {
+                'icon': 'fab fa-twitter',
+                'link': 'https://twitter.com',
+                'color': 'info'
+            },
+            {
+                'icon': 'fab fa-instagram',
+                'link': 'https://intagram.com',
+                'color': 'danger'
+            },
+            {
+                'icon': 'fab fa-linkedin',
+                'link': 'https://linkedin.com',
+                'color': 'primary'
+            },
+        ]
+    },
+
+    {
+        'name': 'Oluwadbira O.',
+        'about': `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Molestiae tempore ducimus tempora rerum autem maiores totam alias officia dolore, 
+                modi eligendi aspernatur, ab impedit optio omnis atque quas vitae explicabo?`,
+        'role': 'UI/UX Product Designer',
+        'img': dabira,
+        'reverse': true,
+        'contact': [
+            // {
+            //     'title': 'Phone Number',
+            //     'content': '(+234) 815 2715 095',
+            //     'icon': 'fa-phone-alt'
+            // },
+            // {
+            //     'title': 'Email',
+            //     'content': 'olaemma4213@gmail.com',
+            //     'icon': 'fa-envelope'
+            // }
+        ],
+        'account': [
+            {
+                'icon': 'fab fa-facebook',
+                'link': 'https://facebook.com',
+                'color': 'primary'
+            },
+            {
+                'icon': 'fab fa-twitter',
+                'link': 'https://twitter.com',
+                'color': 'info'
+            },
+            {
+                'icon': 'fab fa-instagram',
+                'link': 'https://intagram.com',
+                'color': 'danger'
+            },
+            {
+                'icon': 'fab fa-linkedin',
+                'link': 'https://linkedin.com',
+                'color': 'primary'
+            },
+        ]
+    },
+
+    {
+        'name': 'Atitebi Blessed',
+        'about': `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Molestiae tempore ducimus tempora rerum autem maiores totam alias officia dolore, 
+                modi eligendi aspernatur, ab impedit optio omnis atque quas vitae explicabo?`,
+        'role': 'PRO',
+        'img': blessed,
+        'reverse': false,
+        'contact': [
+            // {
+            //     'title': 'Phone Number',
+            //     'content': '(+234) 815 2715 095',
+            //     'icon': 'fa-phone-alt'
+            // },
+            // {
+            //     'title': 'Email',
+            //     'content': 'olaemma4213@gmail.com',
+            //     'icon': 'fa-envelope'
+            // }
+        ],
+        'account': [
+            {
+                'icon': 'fab fa-facebook',
+                'link': 'https://facebook.com',
+                'color': 'primary'
+            },
+            {
+                'icon': 'fab fa-twitter',
+                'link': 'https://twitter.com',
+                'color': 'info'
+            },
+            {
+                'icon': 'fab fa-instagram',
+                'link': 'https://intagram.com',
+                'color': 'danger'
+            },
+            {
+                'icon': 'fab fa-linkedin',
+                'link': 'https://linkedin.com',
+                'color': 'primary'
+            },
+        ]
+    },
 ];
 
 

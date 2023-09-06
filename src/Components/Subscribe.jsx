@@ -1,3 +1,4 @@
+import ScrollAnimation from "react-animate-on-scroll";
 import { AppTextField, Wrapper } from "./Components";
 
 function Subscribe() {
@@ -5,17 +6,18 @@ function Subscribe() {
         <section className="cover-color">
             <div className="subscribe pb-5 pt-5 navbar">
                 <div className="container">
+                    <ScrollAnimation
+                        animateIn='bounceIn'
+                        animateOut='bounceOut'>
                     <Wrapper
                         title='Subscribe' 
-                        content='Subscribe to our Newsletter'
-                    >
+                        content='Subscribe to our Newsletter'>
                         <h5>
                             Subscribe to our newsletter to get 
                             updates on upcoming events and programms...
                         </h5>
                     </Wrapper>
                     <div className="group-item spread-shadow mt-5 w-100">
-                        
                         <AppTextField icon='fa-envelope' bgColor='bg-white' type='email' placeholder='E-mail address' />
 
                         <button className="btn sub-btn">
@@ -23,6 +25,7 @@ function Subscribe() {
                         </button>
 
                     </div>
+                </ScrollAnimation>
                 </div>
             </div>
         </section>

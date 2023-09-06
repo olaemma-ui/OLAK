@@ -315,22 +315,24 @@ h1.label{
 .project-card:hover .project-body{
     content: '';
     height: 100%;
+    width: 100%;
     background-color: #071d059a;
     backdrop-filter: blur(.2em);
     z-index: 1;
     transition: all .3s;
     visibility: visible;
-    top: .0em;
-    transform: scale(1.1);
+    top: -20em;
+    transform: scale(1);
 }
 .project-card:hover img.project-img{
     transition: all .3s;
-    transform: scale(1.1);
+    transform: scale(0.95);
 }
 .project-card > img.project-img{
-    width: 25em;
+    /* width: 25em; */
     height: 20em;
-    position: absolute;
+    width: 100%;
+    /* position: absolute; */
     z-index: -1;
     border-radius: .8em;
 }
@@ -345,7 +347,8 @@ h1.label{
     visibility: hidden;
     position: relative;
     top: 2em;
-    padding: 1em;
+    padding: 1em 0em 0;
+    justify-content: space-between;
 }
 .project-card > .project-body > .navbar{
     border-radius: .8em;
@@ -358,10 +361,20 @@ h1.label{
     height: 2em;
 }
 .project-card > .project-body > .project-content{
-    height: 70%;
+    height: 10em;
+    align-self: baseline;
+    align-self: self-end;
     display: flex;
+    gap: 1em;
+    padding: 1em;
+    border-bottom-left-radius: .8em;
+    border-bottom-right-radius: .8em;
     align-items: end;
     color: white;
+    /* flex-wrap: wrap; */
+    align-items: end;
+    justify-content: end;
+    /* width: 1em; */
     /* padding: 1em; */
 }
 .project-card > .project-body > .project-content > :first-child{
@@ -573,6 +586,7 @@ section{
     transform: scale(1.1);
 }
 .toggle-nav{
+    display: flex;
     flex-direction: row;
     align-items: start;
     /* position: fixed; */
@@ -602,6 +616,50 @@ section{
 }
 
 @media screen and (max-width: 768px) {
+    
+.project-card:hover .project-body{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #071d059a;
+    backdrop-filter: blur(.2em);
+    z-index: 1;
+    transition: all .3s;
+    visibility: visible;
+    top: -13em;
+    transform: scale(1);
+}
+    .project-card > img.project-img{
+        /* width: 19em !important; */
+        height: 13em;
+    }
+    .project-card{
+        width: 19em;
+        height: 13em;
+    }
+    .project-card > .project-body > .project-content{
+        padding-bottom: 1em;
+        height: 80%;
+        /* width: 18em; */
+        /* background-color: blue; */
+    }
+    .project-body{
+        width: 19em;
+    }
+    .group-item{
+        flex-direction: column;
+    }
+    .group-item >button.sub-btn{
+        border-radius: .8em;
+        width: 100%;
+        height: 3.5em;
+        margin-top: 1em;
+    }
+    .group-item > div{
+        border-radius: .8em;
+        width: 100%;
+        height: 4.5em;
+    }
     .contact-consult .consult:not(.tel){
         visibility: hidden;
         position: absolute;
@@ -627,14 +685,16 @@ section{
     }
     .toggle-nav{
         position: fixed;
+        flex-direction: column;
         height: 100%;
-        width: 15em;
+        min-width: 15em;
+        max-width: 20em;
         background-color: white;
         overflow-y: auto;
         justify-content: start;
         padding: 1em 1em !important;
         box-shadow: 5px 50px 50px 20px rgba(77, 77, 77, 0.127);
-        animation: slide-in;
+        /* animation: slide-in; */
         animation-duration: .5s;
     }
     .toggle-nav > .navbar{
@@ -646,6 +706,7 @@ section{
     }
     .toggle-btn{
         display: block !important;
+        margin-left: auto;
     }
 }
 
@@ -661,8 +722,21 @@ section{
     .bg-wrapper{
         font-size: 5em;
     }
+    
+.project-card:hover .project-body{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #071d059a;
+    backdrop-filter: blur(.2em);
+    z-index: 1;
+    transition: all .3s;
+    visibility: visible;
+    top: -13em;
+    transform: scale(1);
+}
     .project-card > img.project-img{
-        width: 19em !important;
+        /* width: 19em !important; */
         height: 13em;
     }
     .project-card{
@@ -672,10 +746,69 @@ section{
     .project-card > .project-body > .project-content{
         padding-bottom: 1em;
         height: 80%;
-        width: 18em;
+        /* width: 18em; */
     }
     .project-body{
         width: 19em;
+    }
+    .group-item{
+        flex-direction: column;
+    }
+    .group-item >button.sub-btn{
+        border-radius: .8em;
+        width: 100%;
+        height: 3.5em;
+        margin-top: 1em;
+    }
+    .group-item > div{
+        border-radius: .8em;
+        width: 100%;
+        height: 4.5em;
+    }
+}
+
+
+@media screen and (max-width: 325px) {
+    /* .skill-icon{
+        top: 9.5em;
+        left: 17.8em;
+    } */
+    .contact-consult{
+        visibility: hidden;
+        position: absolute;
+    }
+    .bg-wrapper{
+        font-size: 5em;
+    }
+    
+.project-card:hover .project-body{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #071d059a;
+    backdrop-filter: blur(.2em);
+    z-index: 1;
+    transition: all .3s;
+    visibility: visible;
+    top: -11em;
+    transform: scale(1);
+}
+    .project-card > img.project-img{
+        /* width: 19em !important; */
+        height: 11em;
+    }
+    .project-card{
+        width: 15em;
+        height: 11em;   
+    }
+    .project-card > .project-body > .project-content{
+        padding-bottom: 1em;
+        height: 80%;
+        /* width: 18em; */
+    }
+    .project-body{
+        width: 19em;
+        /* height: 11em; */
     }
     .group-item{
         flex-direction: column;
