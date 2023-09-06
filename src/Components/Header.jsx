@@ -51,7 +51,7 @@ function Header() {
                             onClick={handleToggle} />
                    </>
 
-                    {toggleValue && window.screen.width < 600 && <div className='d-flex flex-column justify-content-end h-100'>
+                    {window.screen.width < 600 && <div className='d-flex flex-column justify-content-end h-100'>
                         {contacts.map((contact, index) => 
                                 (index < 2) 
                                     ? <a href={contact.href} className='consult tel mb-2 mt-3'>

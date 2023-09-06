@@ -191,7 +191,7 @@ const aboutService = [
 const projects = [
     {
         'title': 'Project 1 Title',
-        'about': 'A town hall different from bala blu, blue blu bulaba. broom broom ......',
+        'about': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil ad fugit harum illo inventore numquam tempore. Ducimus, maxime pariatur eligendi at ab perspiciatis non nam, officiis iusto ullam quia expedita? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil ad fugit harum illo inventore numquam tempore. Ducimus, maxime pariatur eligendi at ab perspiciatis non nam, officiis iusto ullam quia expedita?',
         'link': 'https://.........',
         'img': blog1
     },
@@ -414,10 +414,8 @@ const team = [
 
     
     {
-        'name': 'Shotayo Samson A.',
-        'about': `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Molestiae tempore ducimus tempora rerum autem maiores totam alias officia dolore, 
-                modi eligendi aspernatur, ab impedit optio omnis atque quas vitae explicabo?`,
+        'name': 'Shotayo Samson O.',
+        'about': ` Shotayo Samson is a talented and experienced Product, UI/UX, and Visual Designer with a proven track record of creating exceptional designs. His skills and experience have helped him grow as a designer and make a positive impact on the industry.`,
         'role': 'Team lead Product and Graphic Design',
         'reverse': false,
         'img': samson,

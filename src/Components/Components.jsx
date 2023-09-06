@@ -85,11 +85,11 @@ function Logo() {
 function Project({title, link, about, img}){
     return (
         
-       <div className="col-md-4 col-8 rounded p-3 pl-0 mr-">
+       <div className="rounded p-3 pl-0 m-md-0">
             <div className="project-card">
                 <img src={img} alt="" className="project-img" />
-                <div className="project-body d-flex flex-column">
-                    <div className="bg-white nav-brand d-flex p-2 rounded-pill mb-4" style={{width: 'fit-content'}}>
+                <div className="project-body d-flex flex-column justify-content-between">
+                    <div className="bg-white nav-brand project-logo d-flex p-2 rounded-pill mb-4" style={{width: 'fit-content'}}>
                         <img src={logo} className='logo' style={{
                             width: '2em',
                             height: '2em'
@@ -100,12 +100,12 @@ function Project({title, link, about, img}){
 
                     <div className="project-content bg-light border border-success">
 
-                        <span className='text-dark'>
+                        <p className='text-dark project-content-text'>
                             <h4>
                                 {title}
                             </h4>
-                            <small className="font-sm project-about" style={{lineHeight: '.5px'}}>{about}</small>    
-                        </span>
+                            <small className="font-sm project-about" style={{lineHeight: '.5px', textOverflow: 'clip'}}>{about}</small>    
+                        </p>
 
                         <Link href={link} className="rounded-btn rounded-none border border-success">
                             <i className="fa fa-arrow-right"></i>
